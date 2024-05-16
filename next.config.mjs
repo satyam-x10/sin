@@ -1,9 +1,4 @@
-import { headers } from 'next/headers';
-
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    reactStrictMode: true,
-    swcMinify: true,
-};
+const nextConfig = {};
 
 export default nextConfig;
