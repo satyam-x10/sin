@@ -36,7 +36,7 @@ export function Maincontent() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://sinner-9mgnyepra-satyam-kumars-projects-891dc0ae.vercel.app/api/sin");
+        const response = await fetch("/api/sin");
         const newData = await response.json();
         setData(newData.data);
       } catch (error) {

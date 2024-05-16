@@ -17,7 +17,7 @@ export function Upload() {
       return;
     }
     try {
-      const response = await fetch("https://sinner-9mgnyepra-satyam-kumars-projects-891dc0ae.vercel.app/api/sin", {
+      const response = await fetch("/api/sin", {
         method: "POST",
         headers: {
           "Content-Type": "application/json", // Set content type to JSON

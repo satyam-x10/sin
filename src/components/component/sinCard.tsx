@@ -18,7 +18,7 @@ const Sincard = ({ sin }: { sin: { Title: string; Desc: string } }) => {
           <div className="flex-1 my-2">
             <div className="flex items-center justify-between">
               <h2 className="font-extrabold text-2xl text-gray-400">
-                <p>{sin.Title}</p>
+                <span>{sin.Title}</span>
               </h2>
             </div>
             <p className="mt-2 mx-4 text-white">
