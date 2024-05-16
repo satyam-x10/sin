@@ -4,7 +4,6 @@ import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 const Header = () => {
-  
   return (
     <div className="bg-gray-900 p-4 text-white">
       <div className=" mx-auto flex items-center justify-between">
@@ -21,6 +20,5 @@ const Header = () => {
     </div>
   );
 };
-
 
 export default Header;

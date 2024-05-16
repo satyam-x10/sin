@@ -25,7 +25,10 @@ const Sincard = ({ sin }: { sin: { Title: string; Desc: string } }) => {
               {showFullText ? sin.Desc : `${sin.Desc.slice(0, 500)}...`}
             </p>
             {!showFullText && (
-              <p onClick={toggleFullText} className="text-gray-500 border mt-1 border-white rounded-lg flex float-end hover:cursor-pointer">
+              <p
+                onClick={toggleFullText}
+                className="text-gray-500 border mt-1 border-white rounded-lg flex float-end hover:cursor-pointer"
+              >
                 <p className="p-1">Read More</p>
               </p>
             )}

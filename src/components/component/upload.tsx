@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { useState } from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
@@ -18,13 +18,13 @@ export function Upload() {
     }
     try {
       const response = await fetch("http://localhost:3000/api/sin", {
-        method: "POST",  
+        method: "POST",
         headers: {
           "Content-Type": "application/json", // Set content type to JSON
-        },      
+        },
         body: JSON.stringify({ title, content }), // Stringify the object
       });
-      if (response.ok) {        
+      if (response.ok) {
       } else {
         console.error("Failed to create post:", response.statusText);
       }
@@ -35,10 +35,9 @@ export function Upload() {
     setTitle("");
     setContent("");
 
-    // go to home page 
+    // go to home page
     window.location.href = "/";
   };
-  
 
   return (
     <main className="flex flex-col items-center justify-center w-full min-h-screen bg-gray-100 dark:bg-gray-900 px-4 md:px-6 lg:px-8 py-4 md:py-6 lg:py-6">

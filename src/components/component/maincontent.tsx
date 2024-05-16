@@ -23,7 +23,7 @@ To read more about using these font, please visit the Next.js documentation:
 - App Directory: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
-'use client';
+"use client";
 
 import { useState, useEffect } from "react";
 import { BiSolidUpArrowCircle } from "react-icons/bi";
@@ -35,17 +35,17 @@ export function Maincontent() {
 
   useEffect(() => {
     const fetchData = async () => {
-      try {        
-        const response = await fetch('http://localhost:3000/api/sin');
+      try {
+        const response = await fetch("http://localhost:3000/api/sin");
         const newData = await response.json();
         setData(newData.data);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error("Error fetching data:", error);
       }
     };
     fetchData();
   }, []);
-  
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -74,8 +74,8 @@ export function Maincontent() {
       <main className="flex-1 bg-gray-500">
         <div className="mx-auto grid grid-cols-12 p-2">
           <div className="col-span-12 space-y-2">
-            {data?.map((item: any, index: number) => (              
-             <Sincard key={index} sin={item} />
+            {data?.map((item: any, index: number) => (
+              <Sincard key={index} sin={item} />
             ))}
           </div>
         </div>
